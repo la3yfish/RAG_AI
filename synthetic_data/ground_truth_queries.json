@@ -1,0 +1,47 @@
+{
+  "notes": "Synthetic queries to validate retrieval + citations. expected_sources are filenames.",
+  "cases": [
+    {
+      "q": "Какой стандартный гарантийный срок?",
+      "expected_sources": [
+        "contract_sample.docx",
+        "internal_faq.md"
+      ]
+    },
+    {
+      "q": "Какой целевой процент рекламаций?",
+      "expected_sources": [
+        "sales_report_Q3_2025.pdf",
+        "policy_procurement_logistics.md",
+        "complex_report_with_table.pdf"
+      ]
+    },
+    {
+      "q": "Какая валюта у поставщика по proj_005?",
+      "expected_sources": [
+        "client_projects.csv",
+        "email_thread_proj_005.txt",
+        "complex_report_with_table.pdf"
+      ]
+    },
+    {
+      "q": "Сколько дней может добавить маршрут A по таможне?",
+      "expected_sources": [
+        "email_thread_proj_005.txt"
+      ]
+    },
+    {
+      "q": "Общий объём продаж за Q3 2025?",
+      "expected_sources": [
+        "sales_report_Q3_2025.pdf",
+        "complex_report_with_table.pdf"
+      ]
+    },
+    {
+      "q": "Invoice No INV-2025-09-017: какие позиции и суммы?",
+      "expected_sources": [
+        "invoice_scanned.pdf"
+      ]
+    }
+  ]
+}

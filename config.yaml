@@ -1,0 +1,19 @@
+runtime:
+  environment: dev
+  strict_mode: true
+
+vectorstore:
+  # MVP default: chroma (local, no external service)
+  provider: chroma
+  chroma:
+    path: ./data/chroma
+    collection: rag_ai
+
+embeddings:
+  # MVP default: stub (offline)
+  provider: stub
+  stub:
+    dim: 384
+
+frontend:
+  mode: streamlit

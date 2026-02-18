@@ -92,18 +92,21 @@ def _build_reranker(settings: Settings) -> IReranker:
 
 
 def _build_ingestors(settings: Settings) -> list[IIngestor]:
-    # Order matters: first match wins
-    from backend.adapters.ingestors.pdf_ingestor import PdfIngestor
-    from backend.adapters.ingestors.docx_ingestor import DocxIngestor
-    from backend.adapters.ingestors.csv_ingestor import CsvIngestor
+    # MVP: enable the core set of ingestors.
+    # Order here is not critical because selection is by can_handle(),
+    # but we keep it predictable.
     from backend.adapters.ingestors.md_ingestor import MarkdownIngestor
+    from backend.adapters.ingestors.csv_ingestor import CsvIngestor
+    from backend.adapters.ingestors.docx_ingestor import DocxIngestor
+    from backend.adapters.ingestors.pdf_ingestor import PdfIngestor
 
     return [
-        PdfIngestor(),
-        DocxIngestor(),
         CsvIngestor(),
         MarkdownIngestor(),
+        DocxIngestor(),
+        PdfIngestor(),
     ]
+
 
 
 def _build_log_sink(settings: Settings) -> ILogSink:

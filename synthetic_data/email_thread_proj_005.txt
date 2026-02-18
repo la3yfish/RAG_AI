@@ -1,0 +1,27 @@
+Subject: Re: Project proj_005 — customs delay risk
+
+From: logistics@unittech.example
+To: procurement@unittech.example
+Date: 2025-09-18
+
+RU: По proj_005 есть риск задержки из-за таможни. Нужны альтернативные маршруты.
+
+---
+
+From: procurement@unittech.example
+To: logistics@unittech.example
+Date: 2025-09-18
+
+EN: Acknowledged. Please propose 2 alternative routes and estimate lead time impact.
+Also confirm currency for the supplier: CNY.
+
+---
+
+From: logistics@unittech.example
+To: procurement@unittech.example
+Date: 2025-09-19
+
+RU: Предлагаю:
+1) Маршрут A (через СПб): +7-10 дней.
+2) Маршрут B (через Казань): +10-14 дней.
+Валюта поставщика: CNY.
